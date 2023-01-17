@@ -1,0 +1,37 @@
+@media screen and (max-width: 600px){
+  body{
+    text-align: center;
+  }
+  .divimg{
+    color:blue;
+    margin-top: 10px;
+  }
+  .divbody{
+    color:red;
+  }
+  .article{
+    border: 1px solid black;
+  }
+}
+@media screen and (min-width: 1000px){
+  body{
+    text-align: center;
+  }
+  .article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    margin: 10px 70px;
+    padding: 0;
+    background-color: rgb(188, 192, 207);
+  }
+  .divbody{
+    margin: 30px;
+  }
+  .divimg{
+    margin: 35px;
+  }
+  .App1{
+    border: 1px solid black;
+  }
+}
