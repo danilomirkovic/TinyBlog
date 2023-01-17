@@ -23,9 +23,9 @@ export default function App() {
     api();
   }, []);
 
-  const history = result.filter(e=> e.tags.includes('history') );
-  const french = result.filter(e=> e.tags.includes('french') );
-  const love = result.filter(e=> e.tags.includes('love'));
+  const history = result.filter(e => e.tags.includes('history'));
+  const french = result.filter(e => e.tags.includes('french'));
+  const love = result.filter(e => e.tags.includes('love'));
 
   return (
     <>
@@ -37,9 +37,11 @@ export default function App() {
 
               <div className="divimg">
                 <img src={img} alt='img' />
-                <p key={value.tags[0]}>{value.tags[0]}</p>
-                <p key={value.tags[1]}>{value.tags[1]}</p>
-                <p key={value.tags[2]}>{value.tags[2]}</p>
+                <div className='divtags'>
+                  <p className='ptags' key={value.tags[0]}>{value.tags[0]}</p>
+                  <p className='ptags' key={value.tags[1]}>{value.tags[1]}</p>
+                  <p className='ptags' key={value.tags[2]}>{value.tags[2]}</p>
+                </div>
               </div>
 
               <div className="divbody">
@@ -59,9 +61,11 @@ export default function App() {
 
               <div className="divimg">
                 <img src={img} alt='img' />
-                <p key={value.tags[0]}>{value.tags[0]}</p>
-                <p key={value.tags[1]}>{value.tags[1]}</p>
-                <p key={value.tags[2]}>{value.tags[2]}</p>
+                <div className='divtags'>
+                  <p className='ptags' key={value.tags[0]}>{value.tags[0]}</p>
+                  <p className='ptags' key={value.tags[1]}>{value.tags[1]}</p>
+                  <p className='ptags' key={value.tags[2]}>{value.tags[2]}</p>
+                </div>
               </div>
 
               <div className="divbody">
@@ -81,9 +85,11 @@ export default function App() {
 
               <div className="divimg">
                 <img src={img} alt='img' />
-                <p key={value.tags[0]}>{value.tags[0]}</p>
-                <p key={value.tags[1]}>{value.tags[1]}</p>
-                <p key={value.tags[2]}>{value.tags[2]}</p>
+                <div className='divtags'>
+                  <p className='ptags' key={value.tags[0]}>{value.tags[0]}</p>
+                  <p className='ptags' key={value.tags[1]}>{value.tags[1]}</p>
+                  <p className='ptags' key={value.tags[2]}>{value.tags[2]}</p>
+                </div>
               </div>
 
               <div className="divbody">

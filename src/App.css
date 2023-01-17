@@ -16,6 +16,7 @@
 @media screen and (min-width: 1000px){
   body{
     text-align: center;
+    background-color: rgb(230, 231, 235);
   }
   .article{
     display: grid;
@@ -30,5 +31,15 @@
   }
   .divimg{
     margin: 35px;
+  }
+  .divtags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+  }
+  .ptags{
+    background-color: rgb(170, 171, 175);
+    margin: 10px 10px;
+    padding: 5px 5px;
   }
 }
